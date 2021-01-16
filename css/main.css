@@ -1,0 +1,325 @@
+@font-face{
+	font-family: 'Conv_Exo2.0-Thin';
+	src: url('../webfonts/Exo2.0-Thin.eot');
+	src: local('☺'), url('../webfonts/Exo2.0-Thin.woff') format('woff'), url('../webfonts/Exo2.0-Thin.ttf') format('truetype'), url('../webfonts/Exo2.0-Thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('../webfonts/Trebuchet-BoldItalic.eot');
+    src: local('Trebuchet MS Bold Italic'), local('Trebuchet-BoldItalic'),
+        url('../webfonts/Trebuchet-BoldItalic.eot') format('embedded-opentype'),
+        url('../webfonts/Trebuchet-BoldItalic.woff') format('woff'),
+        url('../webfonts/Trebuchet-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'Trebuchet MS';
+    src: url('../webfonts/TrebuchetMS-Bold.eot');
+    src: local('Trebuchet MS Bold'), local('TrebuchetMS-Bold'),
+        url('../webfonts/TrebuchetMS-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/TrebuchetMS-Bold.woff') format('woff'),
+        url('../webfonts/TrebuchetMS-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Trebuchet MS';
+    src: url('../webfonts/TrebuchetMS-Italic.eot');
+    src: local('Trebuchet MS Italic'), local('TrebuchetMS-Italic'),
+        url('../webfonts/TrebuchetMS-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/TrebuchetMS-Italic.woff') format('woff'),
+        url('../webfonts/TrebuchetMS-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'Trebuchet MS';
+    src: url('../webfonts/TrebuchetMS.eot');
+    src: local('Trebuchet MS'), local('TrebuchetMS'),
+        url('../webfonts/TrebuchetMS.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/TrebuchetMS.woff') format('woff'),
+        url('../webfonts/TrebuchetMS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;   
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .65), transparent 50%), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .65), transparent 50%), url(../images/shop_list/bg.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .65), transparent 50%), linear-gradient(180deg, rgba(0, 0, 0, .65), transparent 50%), url(../images/shop_list/bg.jpg);
+}
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 680px;
+}
+
+.container__flex{
+    display: flex;
+    justify-content: center;
+}
+.catalog-header{
+    text-align: center;
+    padding: 37px 0 0;
+    box-sizing: border-box;
+}
+.catalog-header__heading{
+    font-family: 'Conv_Exo2.0-Thin', Tahoma, sans-serif;
+    font-size: 36px;
+    font-weight: 200;
+    color: #fff;
+    margin: 0;
+}
+.catalog-block__products-list{
+    margin-top: 23px;
+}
+.products-list{
+    font-family: 'Conv_Exo2.0-Thin', Tahoma, sans-serif;
+}
+.product-item-wrapped{
+    width: 31.28%;
+}
+.product{
+    width: 320px;
+    height: 480px;
+    background-color: #1698d9;
+    -webkit-clip-path: polygon(13% 0, 100% 0%, 100% 100%, 0 100%, 0 9%);
+    clip-path: polygon(13% 0, 100% 0%, 100% 100%, 0 100%, 0 9%);
+    position: relative;
+    padding: 20px 49px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.default:hover.product{
+    background-color: #2ea8e6;
+}
+.default:hover .cirсle{
+    background-color: #2ea8e6;
+}
+.product:hover{
+    background-color: #2ea8e6;
+}
+.product:hover .cirсle{
+    background-color: #2ea8e6;
+}
+.selected .product{
+    background-color: #d91667;
+}
+.selected .cirсle{
+    background-color: #d91667;
+}
+.selected:hover .product{
+    background-color: #d91667;
+}
+.selected:hover .cirсle{
+    background-color: #d91667;
+}
+.selected .product-item__text-bottom-selected{
+    display: block;
+}
+.selected .product-item__text-bottom{
+    display: none;
+}
+.disable .product{
+    background-color: #b3b3b3;
+}
+.disable .product-header{
+    color: #b3b3b3;
+}
+.disable .brand__heading{
+    color: #b3b3b3;
+}
+.disable .product-body__description{
+    color: #b3b3b3;
+}
+.disable .product-body{
+    color: #b3b3b3;
+}
+.disable .cirсle{
+    background-color: #b3b3b3;
+}
+.disable:hover .cirсle{
+    background-color: #b3b3b3;
+}
+.disable .text-bottom{
+    display: none;
+}
+.disable .product:before{
+    background-image: url(../images/shop_list/cat.png);
+    opacity: 0.5;
+}
+.disable .text-bottom-disable{
+    display: block;
+}
+.product:before{
+    content: '';
+    width: 312px;
+    height: 472px;
+    border-radius: 10px;
+    -webkit-clip-path: polygon(13% 0, 100% 0%, 100% 100%, 0 100%, 0 9%);
+    clip-path: polygon(13% 0, 100% 0%, 100% 100%, 0 100%, 0 9%);
+    background: #f2f2f2;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-image: url(../images/shop_list/cat.png);
+    background-position: -28px 203px;
+    background-size: 370px;
+    background-repeat: no-repeat;
+}
+.product-header{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+.product__product-header{
+    display: block;
+    position: absolute;
+}
+.product__product-header_display-none{
+    display: none;
+}
+.product-header-selected-hover{
+    color:  #d91667;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    position: absolute;
+}
+.product__product-header-selected-hover{
+    display: none;
+}
+.product__product-header-selected-hover_display-block{
+    display: block;
+}
+
+.product-body{
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #666;
+}
+.product__product-body{
+    position: absolute;
+    top: 49px;
+}
+.brand{
+    padding: 0.01%;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+.brand__heading{
+    color: #000;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: bold;
+    text-align: left;
+}
+.product-body__description{
+    color: #000;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+.product-body__portion-number{
+    font-size: 14px;
+    line-height: 11px;
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+.product-body__present{
+    font-size: 14px;
+    line-height: 20px;
+}
+.cirсle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1698d9;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+}
+.product__cirсle{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+.cirсle__weight{
+    font-size: 42px;
+    padding-top: 21px;
+    box-sizing: border-box;
+}
+.cirсle__kg{
+    font-size: 21px;
+    padding-top: 7px;
+    box-sizing: border-box;
+
+}
+.text-bottom{
+    width: 100%;
+    color: #e9e9e9;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 13px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.text-bottom__buy-link{
+    border-bottom: 1px dashed #1698d9;
+    color: #1698d9;
+    text-decoration: none;
+}
+.product-item__text-bottom{
+    display: block;
+}
+.product-item__text-bottom_display-none{
+    display: none;
+}
+.text-bottom-selected{
+    padding-top: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    color: #e9e9e9;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 13px;
+    text-align: center;
+}
+.product-item__text-bottom-selected{
+    display: none;
+}
+.product-item__text-bottom-selected_display-block{
+    display: block;
+}
+.text-bottom-disable{
+    display: none;
+    color: #ff6;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 13px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+@media (max-width: 1030px) {
+    .products-list{
+        flex-wrap: wrap;
+    }
+    .product-item-wrapped{
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    .product-item-wrapped:last-child{
+        width: 90%;
+    }
+}
+@media (max-width: 767px) {
+    .product-item-wrapped{
+        width: 90%;
+    }
+}
